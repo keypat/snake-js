@@ -8,16 +8,40 @@
 </head>
 
 <body>
+  <section>
 
-<canvas id="mainMenuCanvas" width="1000" height="625"></canvas>
-<!--
+    <div id="canvasesdiv" style="position:relative; width:100%; height:100%">
+      <canvas id="mainMenuCanvas" style="z-index: 1;
+  position:absolute;
+  background='black';
+  left:0px;
+  top:0px;
+  " height="100%" width="100%">
+      </canvas>
+      <canvas id="canvas2" style="z-index: 2;
+  position:absolute;
+  background='black';
+  left:0px;
+  top:0px;
+  " height="300px" width="400">
+      </canvas>
+      <canvas id="layer3" style="z-index: 3;
+  position:absolute;
+  left:0px;
+  top:0px;
+  " height="300px" width="400">
+      </canvas>
+    </div>
+
+    <!--
 <canvas id="instructionsCanvas" width="1000" height="700"></canvas>
 <canvas id="gamePauseCanvas" width="1000" height="700"></canvas>
 <canvas id="gameOverCanvas" width="1000" height="700"></canvas>
 <canvas id="gameCanvas" width="1000" height="700"></canvas>
 -->
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
+  </section>
 </body>
+
 </html>
