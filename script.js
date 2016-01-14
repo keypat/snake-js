@@ -402,7 +402,7 @@ function GUI() {
     ctxMenu.beginPath() ;
     ctxMenu.fillRect(0,0,menuCanvas.width,menuCanvas.height) ;
     ctxMenu.fillStyle = 'black' ;
-    ctxMenu.fillText("Snake, Nigga!",menuCanvas.width/2-100,menuCanvas.height/2) ;
+    ctxMenu.fillText("Snake",menuCanvas.width/2-100,menuCanvas.height/2) ;
     ctxMenu.closePath() ;
     ctxMenu.drawImage(buttonEnter,menuCanvas.width/2,menuCanvas.height/2+200) ;
   }
@@ -414,25 +414,25 @@ function GUI() {
     ctxInstr.beginPath() ;
     ctxInstr.fillRect(0,0,instrCanvas.width,instrCanvas.height) ;
     ctxInstr.fillStyle = 'black' ;
-    ctxInstr.fillText("Instructions, Nigga!",instrCanvas.width/2-100,instrCanvas.height/2) ;
+    ctxInstr.fillText("Instructions",instrCanvas.width/2-100,instrCanvas.height/2) ;
 
     ctxInstr.font = '30px Arial' ;
-    ctxInstr.fillText("Start Game",instrCanvas.width/2,instrCanvas.height/2+260) ;
-    ctxInstr.fillText("Pause [in game]",instrCanvas.width/4-300,instrCanvas.height/4+200) ;
+    ctxInstr.fillText("Start Game",instrCanvas.width/2+35,instrCanvas.height/2+320) ;
+    ctxInstr.fillText("Pause [in game]",instrCanvas.width/4-350,instrCanvas.height/4+150) ;
 
     ctxInstr.closePath() ;
     ctxInstr.drawImage(buttonSpace,instrCanvas.width/2,instrCanvas.height/2+200) ;
-    ctxInstr.drawImage(buttonEsc,instrCanvas.width/4-300,instrCanvas.height/2+150) ;
+    ctxInstr.drawImage(buttonEsc,instrCanvas.width/4-300,instrCanvas.height/4) ;
 
-    ctxInstr.drawImage(buttonW,instrCanvas.width/2-275,instrCanvas.height/2+100) ;
-    ctxInstr.drawImage(buttonA,instrCanvas.width/2-300,instrCanvas.height/2+150) ;
-    ctxInstr.drawImage(buttonS,instrCanvas.width/2-250,instrCanvas.height/2+150) ;
-    ctxInstr.drawImage(buttonD,instrCanvas.width/2-200,instrCanvas.height/2+150) ;
+    ctxInstr.drawImage(buttonW,instrCanvas.width/2-225,instrCanvas.height/4-150) ;
+    ctxInstr.drawImage(buttonA,instrCanvas.width/2-300,instrCanvas.height/4-50) ;
+    ctxInstr.drawImage(buttonS,instrCanvas.width/2-190,instrCanvas.height/4-50) ;
+    ctxInstr.drawImage(buttonD,instrCanvas.width/2-80,instrCanvas.height/4-50) ;
 
-    ctxInstr.drawImage(buttonUp,instrCanvas.width/2-75,instrCanvas.height/2+100) ;
-    ctxInstr.drawImage(buttonLeft,instrCanvas.width/2-100,instrCanvas.height/2+150) ;
-    ctxInstr.drawImage(buttonDown,instrCanvas.width/2-50,instrCanvas.height/2+150) ;
-    ctxInstr.drawImage(buttonRight,instrCanvas.width/2,instrCanvas.height/2+150) ;
+    ctxInstr.drawImage(buttonUp,instrCanvas.width/2+175,instrCanvas.height/4-150) ;
+    ctxInstr.drawImage(buttonLeft,instrCanvas.width/2+100,instrCanvas.height/4-50) ;
+    ctxInstr.drawImage(buttonDown,instrCanvas.width/2+210,instrCanvas.height/4-50) ;
+    ctxInstr.drawImage(buttonRight,instrCanvas.width/2+320,instrCanvas.height/4-50) ;
   }
 
   function drawGame() {
@@ -460,7 +460,7 @@ function GUI() {
     ctxPause.beginPath() ;
     ctxPause.fillRect(0,0,pauseCanvas.width,pauseCanvas.height) ;
     ctxPause.fillStyle = 'black' ;
-    ctxPause.fillText("Paused, Nigga!",pauseCanvas.width/2-100,pauseCanvas.height/2) ;
+    ctxPause.fillText("Paused",pauseCanvas.width/2-100,pauseCanvas.height/2) ;
     ctxPause.closePath() ;
   }
   function drawLost() {
@@ -470,7 +470,7 @@ function GUI() {
     ctxLost.beginPath() ;
     ctxLost.fillRect(0,0,instrCanvas.width,instrCanvas.height) ;
     ctxLost.fillStyle = 'black' ;
-    ctxLost.fillText("Lost, Nigga!",instrCanvas.width/2-100,instrCanvas.height/2) ;
+    ctxLost.fillText("Lost",instrCanvas.width/2-100,instrCanvas.height/2) ;
     ctxLost.closePath() ;
   }
 
