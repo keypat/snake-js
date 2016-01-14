@@ -1,13 +1,37 @@
-body,html {
-  width:100%;
-  height:100%;
-  margin:0;
-  padding:0;
-  overflow:hidden;
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-#mainMenuCanvas {
-  background-color: black ;
-  position: fixed ;
-  left: 0 ;
-  top: 0 ;
+#menuCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#instrCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#gameCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#pauseCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#lostCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#hyperCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
 }
